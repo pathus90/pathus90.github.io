@@ -1,598 +1,1177 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Mamadou Pathé Diallo</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #0ea5e9;
-            --primary-hover: #0b88c3;
-            --secondary-color: #f0f9ff;
-            --dark-color: #333;
-            --light-color: #f8f9fa;
-            --grey-color: #6c757d;
-            --border-color: #dee2e6;
-            --accent-color: #ffee00;
-            --accent-bg: rgba(255, 238, 0, 0.05);
-            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Mamadou Pathé Diallo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #0ea5e9;
+      --primary-hover: #0b88c3;
+      --secondary-color: #f0f9ff;
+      --dark-color: #333;
+      --light-color: #f8f9fa;
+      --grey-color: #6c757d;
+      --border-color: #dee2e6;
+      --accent-color: #ffee00;
+      --accent-bg: rgba(255, 238, 0, 0.05);
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-        body {
-            color: var(--dark-color);
-            line-height: 1.6;
-            background-color: #f5f5f5;
-        }
+    body {
+      color: var(--dark-color);
+      line-height: 1.6;
+      background-color: #f5f5f5;
+    }
 
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background-color: white;
-            box-shadow: var(--shadow);
-            border-radius: 8px;
-            overflow: hidden;
-        }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: white;
+      box-shadow: var(--shadow);
+      border-radius: 8px;
+      overflow: hidden;
+    }
 
-        header {
-            background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%);
-            color: white;
-            padding: 40px 30px;
-            position: relative;
-            overflow: hidden;
-        }
+    header {
+      background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%);
+      color: white;
+      padding: 40px 30px;
+      position: relative;
+      overflow: hidden;
+    }
 
-        header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 250px;
-            height: 250px;
-            background-color: var(--accent-color);
-            border-radius: 50%;
-            opacity: 0.1;
-            transform: translate(50%, -50%);
-        }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 250px;
+      height: 250px;
+      background-color: var(--accent-color);
+      border-radius: 50%;
+      opacity: 0.1;
+      transform: translate(50%, -50%);
+    }
 
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 5px;
-            position: relative;
-            z-index: 1;
-        }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+      position: relative;
+      z-index: 1;
+    }
 
-        header p {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            position: relative;
-            z-index: 1;
-        }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      position: relative;
+      z-index: 1;
+    }
 
-        .social-links {
-            margin-top: 15px;
-            position: relative;
-            z-index: 1;
-        }
+    .social-links {
+      margin-top: 15px;
+      position: relative;
+      z-index: 1;
+    }
 
-        .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            margin-right: 15px;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
 
-        .social-links a:hover {
-            transform: translateY(-3px);
-            color: var(--accent-color);
-        }
+    .social-links a:hover {
+      transform: translateY(-3px);
+      color: var(--accent-color);
+    }
 
-        .social-links i {
-            margin-right: 5px;
-            font-size: 1.2rem;
-        }
+    .social-links i {
+      margin-right: 5px;
+      font-size: 1.2rem;
+    }
 
-        .export-btn {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: var(--accent-color);
-            color: var(--dark-color);
-            border: none;
-            padding: 8px 15px;
-            border-radius: 4px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            z-index: 10;
-            font-weight: bold;
-            transition: all 0.3s;
-        }
+    .export-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: var(--accent-color);
+      color: var(--dark-color);
+      border: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      z-index: 10;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
 
-        .export-btn:hover {
-            background-color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+    .export-btn:hover {
+      background-color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-        .export-btn i {
-            margin-right: 5px;
-        }
+    .export-btn i {
+      margin-right: 5px;
+    }
 
-        .years-experience {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: var(--dark-color);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: bold;
-            margin-top: 15px;
-        }
+    .years-experience {
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: var(--dark-color);
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
 
-        .tags {
-            margin-top: 15px;
-            position: relative;
-            z-index: 1;
-        }
+    .tags {
+      margin-top: 15px;
+      position: relative;
+      z-index: 1;
+    }
 
-        .tag {
-            display: inline-block;
-            background-color: rgba(255, 255, 255, 0.2);
-            padding: 5px 12px;
-            border-radius: 4px;
-            margin: 3px;
-            font-size: 0.85rem;
-            transition: all 0.2s ease;
-        }
+    .tag {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 5px 12px;
+      border-radius: 4px;
+      margin: 3px;
+      font-size: 0.85rem;
+      transition: all 0.2s ease;
+    }
 
-        .tag:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
-        }
+    .tag:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+    }
 
-        section {
-            padding: 30px;
-            border-bottom: 1px solid var(--border-color);
-            position: relative;
-        }
+    section {
+      padding: 30px;
+      border-bottom: 1px solid var(--border-color);
+      position: relative;
+    }
 
-        section::before {
-            font-family: "Font Awesome 6 Free";
-            position: absolute;
-            left: -15px;
-            top: 28px;
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            font-weight: 900;
-            opacity: 0.2;
-        }
+    section::before {
+      font-family: "Font Awesome 6 Free";
+      position: absolute;
+      left: -15px;
+      top: 28px;
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      font-weight: 900;
+      opacity: 0.2;
+    }
 
-        #formation::before {
-            content: "\f19d"; /* graduation cap */
-        }
+    #formation::before {
+      content: "\f19d"; /* graduation cap */
+    }
 
-        #competences::before {
-            content: "\f085"; /* cogs */
-        }
+    #competences::before {
+      content: "\f085"; /* cogs */
+    }
 
-        #experiences::before {
-            content: "\f0b1"; /* briefcase */
-        }
+    #experiences::before {
+      content: "\f0b1"; /* briefcase */
+    }
 
-        h2 {
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            padding-bottom: 8px;
-            position: relative;
-            font-size: 1.5rem;
-            display: inline-block;
-        }
+    h2 {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      position: relative;
+      font-size: 1.5rem;
+      display: inline-block;
+    }
 
-        h2::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
-            border-radius: 2px;
-        }
+    h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+      border-radius: 2px;
+    }
 
-        .formation-item, .experience-item {
-            margin-bottom: 25px;
-            position: relative;
-        }
+    .formation-item, .experience-item {
+      margin-bottom: 25px;
+      position: relative;
+    }
 
-        .formation-date {
-            font-weight: bold;
-            margin-bottom: 5px;
-            color: var(--primary-color);
-        }
+    .formation-date {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: var(--primary-color);
+    }
 
-        .experience-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-            align-items: center;
-        }
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      align-items: center;
+    }
 
-        .experience-title {
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
+    .experience-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
 
-        .experience-company {
-            font-weight: bold;
-            color: var(--primary-color);
-        }
+    .experience-company {
+      font-weight: bold;
+      color: var(--primary-color);
+    }
 
-        .experience-date {
-            color: var(--grey-color);
-            background-color: var(--light-color);
-            padding: 3px 10px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-        }
+    .experience-date {
+      color: var(--grey-color);
+      background-color: var(--light-color);
+      padding: 3px 10px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
 
-        .sub-experience {
-            margin-bottom: 25px;
-            padding-left: 18px;
-            position: relative;
-        }
+    .sub-experience {
+      margin-bottom: 25px;
+      padding-left: 18px;
+      position: relative;
+    }
 
-        .sub-experience::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: linear-gradient(to bottom, var(--primary-color), transparent);
-            border-radius: 3px;
-        }
+    .sub-experience::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(to bottom, var(--primary-color), transparent);
+      border-radius: 3px;
+    }
 
-        .experience-project {
-            font-style: italic;
-            margin-bottom: 10px;
-            color: var(--grey-color);
-            font-weight: 500;
-        }
+    .experience-project {
+      font-style: italic;
+      margin-bottom: 10px;
+      color: var(--grey-color);
+      font-weight: 500;
+    }
 
-        ul {
-            list-style-type: none;
-        }
+    ul {
+      list-style-type: none;
+    }
 
-        .experience-item ul li, .sub-experience ul li {
-            position: relative;
-            padding-left: 20px;
-            margin-bottom: 8px;
-        }
+    .experience-item ul li, .sub-experience ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+    }
 
-        .experience-item ul li:before, .sub-experience ul li:before {
-            content: "\f054"; /* chevron right */
-            font-family: "Font Awesome 6 Free";
-            font-weight: 900;
-            position: absolute;
-            left: 0;
-            color: var(--primary-color);
-            font-size: 0.7rem;
-        }
+    .experience-item ul li:before, .sub-experience ul li:before {
+      content: "\f054"; /* chevron right */
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      color: var(--primary-color);
+      font-size: 0.7rem;
+    }
 
-        .environment {
-            background-color: var(--secondary-color);
-            padding: 12px;
-            border-radius: 6px;
-            margin-top: 12px;
-            font-size: 0.9rem;
-            color: var(--dark-color);
-            border-left: 3px solid var(--primary-color);
-        }
+    .environment {
+      background-color: var(--secondary-color);
+      padding: 12px;
+      border-radius: 6px;
+      margin-top: 12px;
+      font-size: 0.9rem;
+      color: var(--dark-color);
+      border-left: 3px solid var(--primary-color);
+    }
 
-        .environment::before {
-            content: "🛠️ ";
-            margin-right: 5px;
-        }
+    .environment::before {
+      content: "🛠️ ";
+      margin-right: 5px;
+    }
 
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-        }
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
 
-        .skill-group {
-            margin-bottom: 20px;
-            background-color: var(--light-color);
-            padding: 15px;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-        }
+    .skill-group {
+      margin-bottom: 20px;
+      background-color: var(--light-color);
+      padding: 15px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
 
-        .skill-group:hover {
-            box-shadow: var(--shadow);
-            transform: translateY(-3px);
-        }
+    .skill-group:hover {
+      box-shadow: var(--shadow);
+      transform: translateY(-3px);
+    }
 
-        .skill-title {
-            font-weight: bold;
-            margin-bottom: 8px;
-            color: var(--primary-color);
-            display: flex;
-            align-items: center;
-        }
+    .skill-title {
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+    }
 
-        .skill-title i {
-            margin-right: 8px;
-        }
+    .skill-title i {
+      margin-right: 8px;
+    }
 
-        footer {
-            text-align: center;
-            padding: 25px;
-            font-size: 0.9rem;
-            color: var(--grey-color);
-            background-color: var(--light-color);
-        }
+    #engagements-entrepreneuriaux {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      box-shadow: var(--shadow);
+      border-radius: 8px;
+      color: var(--dark-color);
+    }
 
-        @media (max-width: 768px) {
-            .skills-container {
-                grid-template-columns: 1fr;
-            }
+    #engagements-entrepreneuriaux h2 {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      position: relative;
+      font-size: 1.5rem;
+      display: inline-block;
+    }
 
-            .experience-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+    #engagements-entrepreneuriaux h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+      border-radius: 2px;
+    }
 
-            .experience-date {
-                margin-top: 5px;
-            }
+    .engagement-item {
+      margin-bottom: 25px;
+      border: 1px solid var(--border-color);
+      padding: 20px 25px;
+      border-radius: 8px;
+     /* background-color: var(--secondary-color);*/
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
 
-            header h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    .engagement-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--dark-color);
+    }
+
+    .engagement-company {
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+
+    .engagement-title {
+      font-style: italic;
+      color: var(--grey-color);
+    }
+
+    .engagement-date {
+      color: var(--grey-color);
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    .engagement-project {
+      font-style: italic;
+      margin-bottom: 15px;
+      color: var(--grey-color);
+      font-weight: 500;
+    }
+
+    .engagement-context strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--primary-color);
+      font-weight: 700;
+    }
+
+    .engagement-context ul,
+    .engagement-item ul {
+      margin: 8px 0 15px 20px;
+      color: var(--dark-color);
+      line-height: 1.4;
+    }
+
+    .engagement-item ul ul {
+      margin-left: 20px;
+      margin-top: 5px;
+    }
+
+    .engagement-item li {
+      margin-bottom: 6px;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .engagement-item li::before {
+      content: "\f054"; /* FontAwesome chevron right */
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      color: var(--primary-color);
+      font-size: 0.7rem;
+    }
+
+    .environment {
+      background-color: var(--secondary-color);
+      padding: 12px;
+      border-radius: 6px;
+      margin-top: 12px;
+      font-size: 0.9rem;
+      color: var(--dark-color);
+      border-left: 3px solid var(--primary-color);
+      white-space: nowrap;
+      overflow-x: auto;
+    }
+
+    .environment::before {
+      content: "🛠️ ";
+      margin-right: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9rem;
+      color: var(--grey-color);
+      background-color: var(--light-color);
+    }
+
+    @media (max-width: 768px) {
+      .skills-container {
+        grid-template-columns: 1fr;
+      }
+
+      .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .experience-date {
+        margin-top: 5px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
 <div class="container">
-    <header>
-        <button class="export-btn" onclick="window.print()"><i class="fas fa-download"></i> Exporter en PDF</button>
-        <h1>MAMADOU PATHÉ DIALLO</h1>
-        <p><strong>Développeur JAVA Senior</strong> | Cloud • Backend • TDD • Clean Code • API</p>
-        <div class="years-experience">9 ans d'expérience</div>
-        <div class="tags">
-            <span class="tag">#Java</span>
-            <span class="tag">#CleanCode</span>
-            <span class="tag">#Cloud</span>
-        </div>
-        <div class="social-links">
-            <a href="https://github.com/pathus90" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://dev.to/pathus90" target="_blank"><i class="fab fa-dev"></i> Dev.to</a>
-        </div>
-    </header>
+  <header>
+    <button class="export-btn" onclick="window.print()"><i class="fas fa-download"></i> Exporter en PDF</button>
+    <h1>MAMADOU PATHÉ DIALLO</h1>
+    <p><strong>Développeur JAVA Senior</strong> | Cloud • Backend • TDD • Clean Code • API</p>
+    <div class="years-experience">9 ans d'expérience</div>
+    <div class="tags">
+      <span class="tag">#Java</span>
+      <span class="tag">#CleanCode</span>
+      <span class="tag">#Cloud</span>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/pathus90" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://dev.to/pathus90" target="_blank"><i class="fab fa-dev"></i> Dev.to</a>
+    </div>
+  </header>
 
-    <section id="formation">
-        <h2>FORMATION</h2>
-        <div class="formation-item">
-            <div class="formation-date">2012-2014</div>
-            <div>Master Informatique - Université de Lorraine</div>
-        </div>
-        <div class="formation-item">
-            <div class="formation-date">2009-2012</div>
-            <div>Licence informatique - Université de Metz</div>
-        </div>
-    </section>
+  <section id="formation">
+    <h2>FORMATION</h2>
+    <div class="formation-item">
+      <div class="formation-date">2012-2014</div>
+      <div>Master Informatique - Université de Lorraine</div>
+    </div>
+    <div class="formation-item">
+      <div class="formation-date">2009-2012</div>
+      <div>Licence informatique - Université de Metz</div>
+    </div>
+  </section>
 
-    <section id="competences">
-        <h2>COMPÉTENCES</h2>
-        <div class="skills-container">
-            <div>
-                <div class="skill-group">
-                    <div class="skill-title"><i class="fas fa-code"></i>Langages</div>
-                    <div>Java 7/8/11/17/21, JavaScript, SQL, PL/SQL, Python, Dart</div>
-                </div>
-
-                <div class="skill-group">
-                    <div class="skill-title"><i class="fas fa-cubes"></i>Frameworks</div>
-                    <div>Spring (Boot, Data, Security, AOP, MVC, Core, Batch), Angular, React JS, Apache Camel, Mule, JUnit, Mockito, Concordion</div>
-                </div>
-
-                <div class="skill-group">
-                    <div class="skill-title"><i class="fas fa-database"></i>Base de données</div>
-                    <div>MySQL, PostgreSQL, MongoDB, Oracle, Elasticsearch</div>
-                </div>
-
-                <div class="skill-group">
-                    <div class="skill-title"><i class="fas fa-exchange-alt"></i>Middleware & ESB</div>
-                    <div>ActiveMQ, MuleSoft, RabbitMQ, Apache Kafka, AWS EventBridge</div>
-                </div>
-            </div>
-
-            <div>
-                <div class="skill-group">
-                    <div class="skill-title"><i class="fas fa-cloud"></i>Cloud/DevOps</div>
-                    <div>AWS (Lambda, S3, SNS, SQS, API Gateway, CloudWatch, Kinesis), Docker, Kubernetes, Jenkins, GitLab CI, SonarQube, Terraform, Helm, ArgoCD</div>
-                </div>
-
-                <div class="skill-group">
-                    <div class="skill-title"><i class="fas fa-chart-line"></i>Supervision & Observabilité</div>
-                    <div>Kibana, Datadog, Grafana, Dynatrace</div>
-                </div>
-
-                <div class="skill-group">
-                    <div class="skill-title"><i class="fas fa-sitemap"></i>Architecture & Patterns</div>
-                    <div>Microservices, DDD (Domain-Driven Design), Hexagonal Architecture, Event-Driven Architecture, Clean Architecture</div>
-                </div>
-
-                <div class="skill-group">
-                    <div class="skill-title"><i class="fas fa-tasks"></i>Méthodologies</div>
-                    <div>Agile Scrum, Kanban, TDD, Clean Code</div>
-                </div>
-
-                <div class="skill-group">
-                    <div class="skill-title"><i class="fas fa-mobile-alt"></i>Mobile</div>
-                    <div>Flutter, Bloc</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experiences">
-        <h2>EXPÉRIENCES PROFESSIONNELLES</h2>
-
-        <div class="experience-item">
-            <div class="experience-header">
-                <div>
-                    <span class="experience-company">Canal+</span> •
-                    <span class="experience-title">Développeur Backend/Fullstack Java</span>
-                </div>
-                <div class="experience-date">Mai 2018 - Présent</div>
-            </div>
-
-            <div class="sub-experience">
-                <div class="experience-project">Projet (2024) : Intégration de contenu Warner Bros (PEPSI)</div>
-                <ul>
-                    <li>Conception et développement d'un service de consentement utilisateur permettant aux abonnés de lier leurs comptes Canal+ et Warner Bros</li>
-                    <li>Création de connecteurs personnalisés pour l'intégration avec les API de Warner Bros, garantissant des échanges sécurisés</li>
-                    <li>Mise en place d'une architecture basée sur Apache Camel pour orchestrer les flux de données et gérer les événements métier</li>
-                    <li>Implémentation d'un système robuste avec ActiveMQ pour assurer la fiabilité des échanges avec gestion des erreurs et reprise automatique</li>
-                    <li>Collaboration avec les équipes produit pour garantir une facturation unifiée et améliorer l'expérience utilisateur</li>
-                    <li>Développement de tests unitaires et d'intégration pour assurer la fiabilité et la conformité RGPD</li>
-                </ul>
-                <div class="environment">Java 17/21, Spring Boot, Apache Camel, ActiveMQ, REST, GitLab, SonarQube</div>
-            </div>
-
-            <div class="sub-experience">
-                <div class="experience-project">Projet (2021-2023) : Traitement automatisé des courriers clients</div>
-                <ul>
-                    <li>Conception d'une architecture event-driven pour le traitement des fichiers XML de Docaposte, suivant les principes du Domain-Driven Design</li>
-                    <li>Implémentation d'un système de workflows avec Apache Camel pour orchestrer les flux et ActiveMQ pour la gestion asynchrone des messages</li>
-                    <li>Développement de services backend avec une architecture hexagonale séparant clairement le domaine métier des adaptateurs techniques</li>
-                    <li>Création d'une interface React intuitive pour les téléconseillers avec tableaux de bord de supervision en temps réel</li>
-                    <li>Mise en place d'un mécanisme de rejeu sophistiqué pour garantir la résilience du système face aux erreurs</li>
-                    <li>Automatisation de 80% des traitements, réduisant significativement les délais et améliorant la satisfaction client</li>
-                </ul>
-                <div class="environment">Java, Spring Boot, Apache Camel, ActiveMQ, React, Redux, Docker, CI/CD</div>
-            </div>
-
-            <div class="sub-experience">
-                <div class="experience-project">Projet (2020-2021) : Migration de l'espace client vers le cloud ("smash")</div>
-                <ul>
-                    <li>Direction technique de la migration d'un service critique d'hébergement SFR vers une solution cloud native AWS</li>
-                    <li>Conception d'une architecture serverless sécurisée avec AWS Lambda, S3 et API Gateway</li>
-                    <li>Développement d'un POC et implémentation d'une solution antivirus ClamAV pour sécuriser les uploads de fichiers clients</li>
-                    <li>Création d'une chaîne de traitement de fichiers avec conversion PDF et concaténation via Lambda AWS</li>
-                    <li>Automatisation complète de l'infrastructure avec Terraform selon les principes Infrastructure as Code</li>
-                    <li>Mise en place de pipelines CI/CD pour le déploiement continu et la qualité du code</li>
-                </ul>
-                <div class="environment">Java 11, Apache Camel, AWS (Lambda, S3, API Gateway), Python, Terraform, Jenkins</div>
-            </div>
-
-            <div class="sub-experience">
-                <div class="experience-project">Projet (2018-2020) : Commercialisation d'offres et partenariats</div>
-                <ul>
-                    <li>Conception et développement des services du partenariat entre Free et Canal+ pour l'offre Canal+ Series</li>
-                    <li>Implémentation de Web Services RESTful avec Spring suivant les bonnes pratiques API-first</li>
-                    <li>Développement et optimisation de batchs de traitement massif pour la facturation et la gestion des abonnements</li>
-                    <li>Mise en place de processus de qualité de code avec revues systématiques et analyse SonarQube</li>
-                    <li>Organisation et animation de cérémonies Agile (daily meetings, sprint planning, rétrospectives)</li>
-                    <li>Maintenance évolutive et corrective d'applications legacy critiques pour le business</li>
-                </ul>
-                <div class="environment">Java 8/11, Angular JS, Spring (MVC, Data, Batch, Security), Oracle, Hibernate, Jenkins</div>
-            </div>
+  <section id="competences">
+    <h2>COMPÉTENCES</h2>
+    <div class="skills-container">
+      <div>
+        <div class="skill-group">
+          <div class="skill-title"><i class="fas fa-code"></i>Langages</div>
+          <div>Java 7/8/11/17/21, JavaScript, SQL, PL/SQL, Python, Dart</div>
         </div>
 
-        <div class="experience-item">
-            <div class="experience-header">
-                <div>
-                    <span class="experience-company">RTE</span> •
-                    <span class="experience-title">Développeur Full Stack</span>
-                </div>
-                <div class="experience-date">Novembre 2017 - Avril 2018</div>
-            </div>
-            <div class="experience-project">Projet : Optimisation des Commissions Secondaires du Personnel (CSP2)</div>
-            <ul>
-                <li>Développement d'évolutions backend en utilisant l'approche Test Driven Development (TDD)</li>
-                <li>Mise en place d'interfaces utilisateur modulaires et réactives avec Angular JS</li>
-                <li>Conception et implémentation de batchs de traitement massif pour la gestion des données RH</li>
-                <li>Mise en œuvre des tests unitaires avancés avec JUnit, Mockito et DbUnit</li>
-                <li>Participation aux revues de code et à l'amélioration continue des pratiques de développement</li>
-            </ul>
-            <div class="environment">Java, Angular JS, Spring MVC/Data/Core, Oracle, Hibernate, Docker, Git</div>
+        <div class="skill-group">
+          <div class="skill-title"><i class="fas fa-cubes"></i>Frameworks</div>
+          <div>Spring (Boot, Data, Security, AOP, MVC, Core, Batch), Angular, React JS, Apache Camel, Mule,
+            JUnit, Mockito, Concordion
+          </div>
         </div>
 
-        <div class="experience-item">
-            <div class="experience-header">
-                <div>
-                    <span class="experience-company">Air France</span> •
-                    <span class="experience-title">Ingénieur Développement FullStack</span>
-                </div>
-                <div class="experience-date">Mai 2017 - Octobre 2018</div>
-            </div>
-            <div class="experience-project">Projet : Outil de gestion de crise "Agir"</div>
-            <ul>
-                <li>Développement d'un système intelligent de rappel automatique du personnel en cas de déclenchement de crise</li>
-                <li>Conception d'algorithmes prenant en compte la proximité géographique et la disponibilité du personnel</li>
-                <li>Implémentation d'interfaces de paramétrage pour la configuration des niveaux d'alerte et les règles de mobilisation</li>
-                <li>Création d'une couche de services REST sécurisés pour l'interopérabilité avec les systèmes tiers</li>
-                <li>Application rigoureuse des méthodologies Agile avec participation active aux cérémonies Scrum</li>
-            </ul>
-            <div class="environment">Java, Angular JS, Spring MVC/Core, Oracle, Hibernate, REST, Jenkins</div>
+        <div class="skill-group">
+          <div class="skill-title"><i class="fas fa-database"></i>Base de données</div>
+          <div>MySQL, PostgreSQL, MongoDB, Oracle, Elasticsearch</div>
         </div>
 
-        <div class="experience-item">
-            <div class="experience-header">
-                <div>
-                    <span class="experience-company">Ministère de l'Agriculture</span> •
-                    <span class="experience-title">Développeur JAVA JEE</span>
-                </div>
-                <div class="experience-date">Septembre 2016 - Mai 2017</div>
-            </div>
-            <div class="experience-project">Projets : Applications de traçabilité et gestion des inscriptions</div>
-            <ul>
-                <li>Développement d'une application sécurisée de traçabilité pour la gestion des graines certifiées conforme aux normes européennes</li>
-                <li>Mise en œuvre d'un système de certification pour les différents mélanges avec contrôle des exportations</li>
-                <li>Évolution d'une application de gestion des inscriptions, examens et formations pour les lycées agricoles</li>
-                <li>Migration réussie des modules vers des versions récentes du Framework Orion, améliorant les performances de 30%</li>
-                <li>Analyse des besoins utilisateurs et traduction technique des spécifications fonctionnelles</li>
-            </ul>
-            <div class="environment">Java, Spring, Orion Framework, PostgreSQL, Hibernate, Jasper Report, Maven</div>
+        <div class="skill-group">
+          <div class="skill-title"><i class="fas fa-exchange-alt"></i>Middleware & ESB</div>
+          <div>ActiveMQ, MuleSoft, RabbitMQ, Apache Kafka, AWS EventBridge</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-group">
+          <div class="skill-title"><i class="fas fa-cloud"></i>Cloud/DevOps</div>
+          <div>AWS (Lambda, S3, SNS, SQS, API Gateway, CloudWatch, Kinesis), Docker, Kubernetes, Jenkins,
+            GitLab CI, SonarQube, Terraform, Helm, ArgoCD
+          </div>
         </div>
 
-        <div class="experience-item">
-            <div class="experience-header">
-                <div>
-                    <span class="experience-company">Orange</span> •
-                    <span class="experience-title">Développeur Java</span>
-                </div>
-                <div class="experience-date">Janvier 2015 - Septembre 2016</div>
-            </div>
-            <div class="experience-project">Projet : CRM de fidélisation des partenaires distributeurs</div>
-            <ul>
-                <li>Refonte complète du CRM de fidélisation pour les partenaires Distributeurs Grossistes d'Orange</li>
-                <li>Développement de tableaux de bord analytiques en temps réel pour le suivi des ventes et performances</li>
-                <li>Conception d'une interface front-end sécurisée avec accès personnalisé selon les profils partenaires</li>
-                <li>Implémentation d'un système de contrôle territorial pour la validation des zones de vente autorisées</li>
-                <li>Mise en place d'un module de calcul et visualisation des commissions basé sur des règles métier complexes</li>
-                <li>Formation des utilisateurs finaux et documentation détaillée des fonctionnalités</li>
-            </ul>
-            <div class="environment">Java 7, MySQL, Oracle, Glassfish, Hibernate, JSF, PrimeFaces, Jasper Report</div>
+        <div class="skill-group">
+          <div class="skill-title"><i class="fas fa-chart-line"></i>Supervision & Observabilité</div>
+          <div>Kibana, Datadog, Grafana, Dynatrace</div>
         </div>
-    </section>
 
-    <footer>
-        <p>Mamadou Pathé Diallo - Développeur Java Senior - 2025</p>
-    </footer>
+        <div class="skill-group">
+          <div class="skill-title"><i class="fas fa-sitemap"></i>Architecture & Patterns</div>
+          <div>Microservices, DDD (Domain-Driven Design), Hexagonal Architecture, Event-Driven Architecture,
+            Clean Architecture
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-title"><i class="fas fa-tasks"></i>Méthodologies</div>
+          <div>Agile Scrum, Kanban, TDD, Clean Code</div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-title"><i class="fas fa-mobile-alt"></i>Mobile</div>
+          <div>Flutter, Bloc</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiences">
+    <h2>EXPÉRIENCES PROFESSIONNELLES</h2>
+
+    <!-- Contexte détaillé - Méthode STAR -->
+    <div class="experience-item">
+      <div class="experience-header">
+        <div>
+          <span class="experience-company">Baraka</span> •
+          <span class="experience-title">CTO & Développeur Principal</span>
+        </div>
+        <div class="experience-date">Novembre 2024 – Présent</div>
+      </div>
+      <div class="experience-project">Projet : Baraka Power – Plateforme nationale de distribution digitale
+        d’électricité pour Électricité de Guinée (EDG)
+      </div>
+
+      <div class="experience-context">
+        <strong>Contexte (Situation) :</strong>
+        Électricité de Guinée (EDG), opérateur public en charge de la distribution d’électricité en Guinée,
+        souffrait d’un réseau de distribution centré sur les agences physiques, entraînant :
+        <ul>
+          <li>Des files d’attente chroniques pour les recharges de compteurs prépayés</li>
+          <li>Une faible couverture nationale, surtout en zones rurales</li>
+          <li>Une traçabilité limitée des flux financiers, posant des enjeux de contrôle et de conformité</li>
+        </ul>
+        Dans ce contexte, <strong>Baraka</strong> a été mandatée pour concevoir une <strong>plateforme digitale
+        nationale</strong> permettant de <strong>décentraliser la vente d’électricité via un réseau de
+        tiers</strong> (distributeurs, sous-distributeurs, agents) tout en garantissant <strong>sécurité,
+        traçabilité et efficacité opérationnelle</strong>.
+
+        <br><br>
+        <strong>Objectif :</strong> Lancer et déployer une solution de bout en bout répondant aux exigences
+        métiers d’EDG, dans un environnement contraint techniquement (sécurité inter-systèmes, forte charge
+        transactionnelle, infrastructures parfois limitées), tout en assurant la <strong>scalabilité</strong>,
+        la <strong>supervision temps réel</strong> et la <strong>robustesse opérationnelle</strong> du système.
+      </div>
+
+      <ul>
+        <li><strong>Tâche :</strong> En tant que CTO et développeur principal, j’avais pour responsabilité de :
+          <ul>
+            <li>Définir l’architecture technique et fonctionnelle de la solution</li>
+            <li>Réaliser l’intégralité du développement (backend, frontend, mobile)</li>
+            <li>Mettre en œuvre la sécurité réseau et l’intégration avec les systèmes critiques d’EDG</li>
+            <li>Assurer la mise en production, le monitoring, le support technique et la maintenance
+              évolutive
+            </li>
+            <li>Gérer les environnements de développement, recette, pré-production et production via une
+              chaîne CI/CD automatisée
+            </li>
+            <li>Rédiger la documentation technique et fonctionnelle complète de Baraka Power</li>
+            <li>Former les utilisateurs finaux (distributeurs, agents) à l’utilisation de la plateforme</li>
+            <li>Écrire et exécuter les tests unitaires, d’intégration et fonctionnels pour garantir la
+              qualité du code
+            </li>
+            <li>Assurer la sauvegarde quotidienne de la base de données PostgreSQL sur un bucket S3 AWS</li>
+            <li>Centraliser les logs applicatifs avec Promtail et Loki pour une supervision et un diagnostic
+              efficaces
+            </li>
+          </ul>
+        </li>
+
+        <li><strong>Actions :</strong>
+          <ul>
+            <li><u>Développement full stack</u> :
+              <ul>
+                <li>Backend Java Spring Boot – API REST sécurisées et robustes</li>
+                <li>Frontend Angular – Interface admin pour Baraka et les distributeurs</li>
+                <li>Application mobile Flutter – Dédiée aux agents sur le terrain (Android)</li>
+              </ul>
+            </li>
+            <li><u>Intégration avec EDG</u> :
+              <ul>
+                <li>Lecture et implémentation de la documentation technique complexe du système SMART
+                  d’EDG
+                </li>
+                <li>Connexion aux endpoints critiques (recharges, historique de consommation, statut du
+                  compteur)
+                </li>
+                <li>Gestion de l’authentification basée sur tokens avec rafraîchissement automatique
+                </li>
+              </ul>
+            </li>
+            <li><u>Sécurité réseau</u> :
+              <ul>
+                <li>Mise en place d’un tunnel VPN (StrongSwan) interconnecté avec le pare-feu FortiGate
+                  d’EDG
+                </li>
+                <li>Chiffrement et contrôle d’intégrité des échanges via IPsec</li>
+              </ul>
+            </li>
+            <li><u>Notifications automatisées</u> :
+              <ul>
+                <li>Intégration de la passerelle SMS Nimba pour envoyer les <strong>reçus de
+                  paiement</strong> immédiatement après chaque transaction
+                </li>
+              </ul>
+            </li>
+            <li><u>Infrastructure, CI/CD et monitoring</u> :
+              <ul>
+                <li>Déploiement conteneurisé avec Docker dans plusieurs environnements (dev, recette,
+                  prod)
+                </li>
+                <li>Chaîne d’intégration et déploiement continus automatisée (CI/CD) pour faciliter la
+                  livraison rapide et fiable des versions
+                </li>
+                <li>Supervision centralisée via Promtail, Loki et Grafana pour la collecte des logs,
+                  suivi des erreurs et monitoring des performances
+                </li>
+              </ul>
+            </li>
+            <li><u>Architecture fonctionnelle</u> :
+              <ul>
+                <li>Modèle hiérarchique : Super Admin (Baraka) → Distributeurs → Sous-distributeurs →
+                  Agents
+                </li>
+                <li>Workflows de gestion de crédits avec règles de transfert, historique détaillé et
+                  autorisations granulaires
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li><strong>Résultats :</strong>
+          <ul>
+            <li>Plateforme <strong>déployée à l’échelle nationale</strong>, opérationnelle dans des
+              centaines de points de vente
+            </li>
+            <li>Réduction significative du temps d’attente en agences et amélioration notable de
+              l’expérience utilisateur
+            </li>
+            <li>Respect strict des exigences de sécurité d’EDG, avec audit technique validé</li>
+            <li>Hausse du volume de ventes via tiers distributeurs</li>
+            <li>Fiabilité renforcée grâce aux sauvegardes automatisées et au monitoring en temps réel</li>
+            <li>Adoption rapide par les utilisateurs grâce à la formation et à la documentation fournies
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="environment">
+        Spring Boot, JPA, hibernate, Angular, Flutter, REST API, Docker, CI/CD, StrongSwan VPN, FortiGate,
+        PostgreSQL, AWS S3,
+        Nimba SMS, Promtail, Loki, Grafana, Git
+      </div>
+    </div>
+
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <div>
+          <span class="experience-company">Canal+</span> •
+          <span class="experience-title">Développeur Backend/Fullstack Java</span>
+        </div>
+        <div class="experience-date">Mai 2018 - septembre 2024</div>
+      </div>
+
+      <div class="sub-experience">
+        <div class="experience-project">Projet (2024) : Intégration de contenu Warner Bros (PEPSI)</div>
+        <ul>
+          <li>Conception et développement d'un service de consentement utilisateur permettant aux abonnés de
+            lier leurs comptes Canal+ et Warner Bros
+          </li>
+          <li>Création de connecteurs personnalisés pour l'intégration avec les API de Warner Bros,
+            garantissant des échanges sécurisés
+          </li>
+          <li>Mise en place d'une architecture basée sur Apache Camel pour orchestrer les flux de données et
+            gérer les événements métier
+          </li>
+          <li>Implémentation d'un système robuste avec ActiveMQ pour assurer la fiabilité des échanges avec
+            gestion des erreurs et reprise automatique
+          </li>
+          <li>Collaboration avec les équipes produit pour garantir une facturation unifiée et améliorer
+            l'expérience utilisateur
+          </li>
+          <li>Développement de tests unitaires et d'intégration pour assurer la fiabilité et la conformité
+            RGPD
+          </li>
+        </ul>
+        <div class="environment">Java 17/21, Spring Boot, Apache Camel, ActiveMQ, REST, GitLab, SonarQube</div>
+      </div>
+
+      <div class="sub-experience">
+        <div class="experience-project">Projet (2021-2023) : Traitement automatisé des courriers clients</div>
+        <ul>
+          <li>Conception d'une architecture event-driven pour le traitement des fichiers XML de Docaposte,
+            suivant les principes du Domain-Driven Design
+          </li>
+          <li>Implémentation d'un système de workflows avec Apache Camel pour orchestrer les flux et ActiveMQ
+            pour la gestion asynchrone des messages
+          </li>
+          <li>Développement de services backend avec une architecture hexagonale séparant clairement le
+            domaine métier des adaptateurs techniques
+          </li>
+          <li>Création d'une interface React intuitive pour les téléconseillers avec tableaux de bord de
+            supervision en temps réel
+          </li>
+          <li>Mise en place d'un mécanisme de rejeu sophistiqué pour garantir la résilience du système face
+            aux erreurs
+          </li>
+          <li>Automatisation de 80% des traitements, réduisant significativement les délais et améliorant la
+            satisfaction client
+          </li>
+        </ul>
+        <div class="environment">Java, Spring Boot, Apache Camel, ActiveMQ, React, Redux, Docker, CI/CD</div>
+      </div>
+
+      <div class="sub-experience">
+        <div class="experience-project">Projet (2020-2021) : Migration de l'espace client vers le cloud
+          ("smash")
+        </div>
+        <ul>
+          <li>Direction technique de la migration d'un service critique d'hébergement SFR vers une solution
+            cloud native AWS
+          </li>
+          <li>Conception d'une architecture serverless sécurisée avec AWS Lambda, S3 et API Gateway</li>
+          <li>Développement d'un POC et implémentation d'une solution antivirus ClamAV pour sécuriser les
+            uploads de fichiers clients
+          </li>
+          <li>Création d'une chaîne de traitement de fichiers avec conversion PDF et concaténation via Lambda
+            AWS
+          </li>
+          <li>Automatisation complète de l'infrastructure avec Terraform selon les principes Infrastructure as
+            Code
+          </li>
+          <li>Mise en place de pipelines CI/CD pour le déploiement continu et la qualité du code</li>
+        </ul>
+        <div class="environment">Java 11, Apache Camel, AWS (Lambda, S3, API Gateway), Python, Terraform,
+          Jenkins
+        </div>
+      </div>
+
+      <div class="sub-experience">
+        <div class="experience-project">Projet (2018-2020) : Commercialisation d'offres et partenariats</div>
+        <ul>
+          <li>Conception et développement des services du partenariat entre Free et Canal+ pour l'offre Canal+
+            Series
+          </li>
+          <li>Implémentation de Web Services RESTful avec Spring suivant les bonnes pratiques API-first</li>
+          <li>Développement et optimisation de batchs de traitement massif pour la facturation et la gestion
+            des abonnements
+          </li>
+          <li>Mise en place de processus de qualité de code avec revues systématiques et analyse SonarQube
+          </li>
+          <li>Organisation et animation de cérémonies Agile (daily meetings, sprint planning,
+            rétrospectives)
+          </li>
+          <li>Maintenance évolutive et corrective d'applications legacy critiques pour le business</li>
+        </ul>
+        <div class="environment">Java 8/11, Angular JS, Spring (MVC, Data, Batch, Security), Oracle, Hibernate,
+          Jenkins
+        </div>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <div>
+          <span class="experience-company">RTE</span> •
+          <span class="experience-title">Développeur Full Stack</span>
+        </div>
+        <div class="experience-date">Octobre 2017 - Avril 2018</div>
+      </div>
+      <div class="experience-project">Projet : Optimisation des Commissions Secondaires du Personnel (CSP2)</div>
+      <ul>
+        <li>Développement d'évolutions backend en utilisant l'approche Test Driven Development (TDD)</li>
+        <li>Mise en place d'interfaces utilisateur modulaires et réactives avec Angular JS</li>
+        <li>Conception et implémentation de batchs de traitement massif pour la gestion des données RH</li>
+        <li>Mise en œuvre des tests unitaires avancés avec JUnit, Mockito et DbUnit</li>
+        <li>Participation aux revues de code et à l'amélioration continue des pratiques de développement</li>
+      </ul>
+      <div class="environment">Java, Angular JS, Spring MVC/Data/Core, Oracle, Hibernate, Docker, Git</div>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <div>
+          <span class="experience-company">Air France</span> •
+          <span class="experience-title">Développeur Full Stack</span>
+        </div>
+        <div class="experience-date">Mai 2017 - Octobre 2017</div>
+      </div>
+      <div class="experience-project">Projet : Outil de gestion de crise "Agir"</div>
+      <ul>
+        <li>Développement d'un système intelligent de rappel automatique du personnel en cas de déclenchement de
+          crise
+        </li>
+        <li>Conception d'algorithmes prenant en compte la proximité géographique et la disponibilité du
+          personnel
+        </li>
+        <li>Implémentation d'interfaces de paramétrage pour la configuration des niveaux d'alerte et les règles
+          de mobilisation
+        </li>
+        <li>Création d'une couche de services REST sécurisés pour l'interopérabilité avec les systèmes tiers
+        </li>
+        <li>Application rigoureuse des méthodologies Agile avec participation active aux cérémonies Scrum</li>
+      </ul>
+      <div class="environment">Java, Angular JS, Spring MVC/Core, Oracle, Hibernate, REST, Jenkins</div>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <div>
+          <span class="experience-company">Ministère de l'Agriculture</span> •
+          <span class="experience-title">Développeur JAVA JEE</span>
+        </div>
+        <div class="experience-date">Septembre 2016 - Mai 2017</div>
+      </div>
+      <div class="experience-project">Projets : Applications de traçabilité et gestion des inscriptions</div>
+      <ul>
+        <li>Développement d'une application sécurisée de traçabilité pour la gestion des graines certifiées
+          conforme aux normes européennes
+        </li>
+        <li>Mise en œuvre d'un système de certification pour les différents mélanges avec contrôle des
+          exportations
+        </li>
+        <li>Évolution d'une application de gestion des inscriptions, examens et formations pour les lycées
+          agricoles
+        </li>
+        <li>Migration réussie des modules vers des versions récentes du Framework Orion, améliorant les
+          performances de 30%
+        </li>
+        <li>Analyse des besoins utilisateurs et traduction technique des spécifications fonctionnelles</li>
+      </ul>
+      <div class="environment">Java, Spring, Orion Framework, PostgreSQL, Hibernate, Jasper Report, Maven</div>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <div>
+          <span class="experience-company">Orange Guinée</span> •
+          <span class="experience-title">Développeur full stack</span>
+        </div>
+        <div class="experience-date">Janvier 2015 - Septembre 2016</div>
+      </div>
+      <div class="experience-project">Projet : CRM de fidélisation des partenaires distributeurs</div>
+      <ul>
+        <li>Refonte complète du CRM de fidélisation pour les partenaires Distributeurs Grossistes d'Orange</li>
+        <li>Développement de tableaux de bord analytiques en temps réel pour le suivi des ventes et
+          performances
+        </li>
+        <li>Conception d'une interface front-end sécurisée avec accès personnalisé selon les profils
+          partenaires
+        </li>
+        <li>Implémentation d'un système de contrôle territorial pour la validation des zones de vente
+          autorisées
+        </li>
+        <li>Mise en place d'un module de calcul et visualisation des commissions basé sur des règles métier
+          complexes
+        </li>
+        <li>Formation des utilisateurs finaux et documentation détaillée des fonctionnalités</li>
+      </ul>
+      <div class="environment">Java 7, MySQL, Oracle, Glassfish, Hibernate, JSF, PrimeFaces, Jasper Report</div>
+    </div>
+  </section>
+
+  <section id="engagements-entrepreneuriaux">
+    <h2>ENGAGEMENTS ENTREPRENEURIAUX</h2>
+
+    <div class="engagement-item">
+      <div class="engagement-header">
+        <div>
+          <span class="engagement-company">Recrutech.pro</span> •
+          <span class="engagement-title">Co-founder & CTO</span>
+        </div>
+        <div class="engagement-date">2023 – Présent</div>
+      </div>
+      <div class="engagement-project">Projet : Plateforme digitale de recrutement innovante</div>
+
+      <div class="engagement-context">
+        <strong>Contexte (Situation) :</strong>
+        Dans un marché du recrutement en pleine transformation digitale, Recrutech.pro est née pour offrir une
+        plateforme performante permettant de connecter efficacement entreprises et talents via des solutions
+        automatisées et innovantes.
+        L’objectif était de créer une infrastructure robuste, scalable, tout en favorisant la montée en
+        compétences de l’équipe technique.
+      </div>
+
+      <ul>
+        <li><strong>Tâche :</strong> En tant que cofondateur et CTO, j’avais la responsabilité de :
+          <ul>
+            <li>Diriger l’équipe backend et définir l’architecture technique globale</li>
+            <li>Mettre en place l’infrastructure DevOps basée sur Kubernetes, Helm et GitOps</li>
+            <li>Implémenter une méthodologie Agile avec gestion des user stories via Jira</li>
+            <li>Encadrer les stagiaires et développeurs juniors, promouvoir les bonnes pratiques (revues de
+              code, tests, CI/CD)
+            </li>
+          </ul>
+        </li>
+
+        <li><strong>Actions :</strong>
+          <ul>
+            <li>Conception et déploiement de l’infrastructure cloud native pour assurer la haute
+              disponibilité et la scalabilité
+            </li>
+            <li>Gestion des pipelines CI/CD pour automatiser les déploiements et garantir la qualité des
+              livraisons
+            </li>
+            <li>Animation des cérémonies Agile et pilotage des sprints avec suivi régulier des indicateurs
+            </li>
+            <li>Mentorat technique et organisation d’ateliers de formation pour favoriser l’autonomie des
+              équipes
+            </li>
+            <li>Mise en place de standards de développement, tests unitaires et d’intégration</li>
+          </ul>
+        </li>
+
+        <li><strong>Résultats :</strong>
+          <ul>
+            <li>Lancement réussi de la plateforme avec une infrastructure robuste et scalable</li>
+            <li>Amélioration notable de la productivité et de la qualité logicielle de l’équipe backend</li>
+            <li>Culture DevOps intégrée dans les équipes, facilitant la rapidité des déploiements</li>
+            <li>Stagiaires et juniors formés et rapidement opérationnels, avec montée en compétences
+              effective
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="environment">
+        Kubernetes, Helm, GitOps (FluxCD), CI/CD, Java Spring Boot, PostgreSQL, Jira, Git
+      </div>
+    </div>
+
+    <div class="engagement-item">
+      <div class="engagement-header">
+        <div>
+          <span class="engagement-company">TOURE Multi Service</span> •
+          <span class="engagement-title">Lead Développeur & Architecte technique</span>
+        </div>
+        <div class="engagement-date">2023 – 2024</div>
+      </div>
+      <div class="engagement-project">Projet : Optimum Dépense – Application mobile d’optimisation du panier courses</div>
+
+      <div class="engagement-context">
+        <strong>Contexte (Situation) :</strong>
+        Face à l’augmentation du coût de la vie post-conflit ukrainien, le projet visait à aider les
+        consommateurs à réduire leurs dépenses alimentaires en optimisant leur parcours d’achat selon les prix,
+        la distance et les promotions locales.
+      </div>
+
+      <ul>
+        <li><strong>Tâche :</strong>
+          En tant que lead développeur full-stack, mes responsabilités couvraient :
+          <ul>
+            <li>Conception de l’architecture de la solution (mobile, backend, backoffice)</li>
+            <li>Développement des APIs (authentification, panier, géolocalisation, etc.)</li>
+            <li>Création de l’application mobile hybride iOS & Android en Flutter</li>
+            <li>Conception d’un algorithme combinant Dijkstra et le voyageur de commerce (TSP)</li>
+            <li>Développement d’un backoffice Angular pour gérer les produits, magasins et paramètres (carburant, rayon, etc.)</li>
+          </ul>
+        </li>
+
+        <li><strong>Actions :</strong>
+          <ul>
+            <li>Développement Flutter avec intégration Google Maps & géolocalisation en temps réel</li>
+            <li>Implémentation d’un système de scraping des catalogues et promotions magasins</li>
+            <li>Création de l’algorithme de minimisation du coût total du panier (produits + carburant + distance)</li>
+            <li>API REST sécurisée avec gestion des comptes, sessions, paniers et historiques</li>
+            <li>Interface admin Angular pour CRUD produits/magasins + configuration dynamique</li>
+            <li>Intégration d’un module social dans l’application pour favoriser le partage d’astuces entre utilisateurs</li>
+          </ul>
+        </li>
+
+        <li><strong>Résultats :</strong>
+          <ul>
+            <li>MVP complet livré (mobile, back-end, dashboard admin)</li>
+            <li>Optimisation effective du coût panier courses entre 15 et 25%</li>
+            <li>Premiers tests utilisateurs très positifs sur l’utilisabilité et la pertinence des recommandations</li>
+            <li>Modèle économique freemium avec contribution solidaire (don à des associations humanitaires)</li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="environment">
+        Flutter, Angular, Java, Hibernate, PostgreSQL, REST API, Algorithmes TSP, Google Maps API, Git, CI/CD
+      </div>
+    </div>
+
+    <div class="engagement-item">
+      <div class="engagement-header">
+        <div>
+          <span class="engagement-company">Octave Afrique</span> •
+          <span class="engagement-title">CTO & Lead Développement</span>
+        </div>
+        <div class="engagement-date">2020 – 2022</div>
+      </div>
+      <div class="engagement-project">Projet : Plateforme événementielle billetterie et gestion des événements</div>
+
+      <div class="engagement-context">
+        <strong>Contexte (Situation) :</strong>
+        Octave Afrique vise à digitaliser l’organisation d’événements avec une plateforme intégrée de
+        billetterie, gestion d’agents sur le terrain et boutique produits dérivés, répondant aux besoins
+        croissants des organisateurs en Afrique.
+      </div>
+
+      <ul>
+        <li><strong>Tâche :</strong>
+          En tant que CTO et lead développement backend, mon rôle était de :
+          <ul>
+            <li>Superviser le développement technique et l’infrastructure cloud</li>
+            <li>Encadrer et former les équipes de développeurs</li>
+            <li>Déployer la plateforme et piloter les phases pilotes sur plusieurs pays</li>
+            <li>Apporter les bonnes pratiques DevOps et Agile</li>
+          </ul>
+        </li>
+
+        <li><strong>Actions :</strong>
+          <ul>
+            <li>Développement backend Java Spring Boot, base de données PostgreSQL</li>
+            <li>Infrastructure Kubernetes avec Helm et GitOps pour le déploiement continu</li>
+            <li>Développement front React.js et application mobile Flutter (iOS & Android)</li>
+            <li>Formation des équipes aux tests automatisés, revues de code, et déploiements CI/CD</li>
+            <li>Organisation des sprints Agile, gestion des user stories avec Jira</li>
+            <li>Lancement réussi de plusieurs événements pilotes en Guinée et Togo avec plus de 2000 participants</li>
+          </ul>
+        </li>
+
+        <li><strong>Résultats :</strong>
+          <ul>
+            <li>Plateforme opérationnelle et scalable répondant aux besoins utilisateurs</li>
+            <li>Montée en compétences effective des équipes et meilleure qualité du code</li>
+            <li>Adoption rapide de la solution sur les marchés cibles avec retours positifs</li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="environment">
+        Java Spring Boot, PostgreSQL, Kubernetes, Helm, GitOps, React.js, Flutter, CI/CD, Jira, Git
+      </div>
+    </div>
+  </section>
+
+  <section id="engagements-open-source">
+    <h2>ENGAGEMENTS OPEN SOURCE</h2>
+
+    <div class="engagement-item">
+      <div class="engagement-header">
+        <div>
+          <span class="engagement-company">Cawoylel</span> •
+          <span class="engagement-title">Contributeur Flutter & NLP</span>
+        </div>
+        <div class="engagement-date">2024 – Présent</div>
+      </div>
+      <div class="engagement-project">
+        Développement d’applications linguistiques open source pour le Fulfulde (Flutter, NLLB, NLP).
+        Contributions majeures aux projets
+        <a href="https://github.com/cawoylel/FulaSpeechCorpora" target="_blank">FulaSpeechCorpora</a>,
+        <a href="https://github.com/cawoylel/firtanam-mobile" target="_blank">Firtanam</a>,
+        <a href="https://github.com/cawoylel/nlp4all" target="_blank">nlp4all</a> et
+        <a href="https://github.com/cawoylel/windanam" target="_blank">Windanam</a>.
+      </div>
+      <div class="environment">
+        Flutter, Dart, Python, Jupyter, NLP, Speech-to-text, Fulfulde
+      </div>
+    </div>
+
+    <div class="engagement-item">
+      <div class="engagement-header">
+        <div>
+          <span class="engagement-company">NimbaSMS</span> •
+          <span class="engagement-title">Auteur de la librairie Java</span>
+        </div>
+        <div class="engagement-date">2023</div>
+      </div>
+      <div class="engagement-project">
+        Création de la librairie Java <a href="https://github.com/nimbasms/nimbasms-java" target="_blank">nimbasms-java</a>
+        pour l’envoi de SMS via l’API de NimbaSMS.
+      </div>
+      <div class="environment">
+        Java, REST API, Open Source, SMS Gateway
+      </div>
+    </div>
+
+    <div class="engagement-item">
+      <div class="engagement-header">
+        <div>
+          <span class="engagement-company">Orange Money Guinée</span> •
+          <span class="engagement-title">Développeur SDK Java</span>
+        </div>
+        <div class="engagement-date">2021</div>
+      </div>
+      <div class="engagement-project">
+        Développement du SDK Java open source <a href="https://github.com/pathus90/om4j" target="_blank">om4j</a>
+        pour intégrer les paiements via Orange Money Guinée.
+      </div>
+      <div class="environment">
+        Java, SDK, API Mobile Money, Paiement, Open Source
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Mamadou Pathé Diallo - Développeur Java Senior - 2025</p>
+  </footer>
 </div>
 </body>
 </html>
